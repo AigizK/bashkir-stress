@@ -89,7 +89,7 @@ def should_exclude_word(word, index):
     word_lower = word.lower()
 
     # Правило 1a: слово заканчивается на -ма/-мә/-мо/-ме/-мө/-мы (без проверки предыдущей буквы)
-    simple_endings = ['ма', 'мә', 'мо', 'ме', 'мө', 'мы']
+    simple_endings = ['мо', 'ме', 'мө', 'мы']
     if any(word_lower.endswith(ending) for ending in simple_endings):
         return True
 
